@@ -56,6 +56,7 @@ main section .left {
 }
 main section .right {
   width: 30%;
+  height: fit-content;
   background-color: var(--bg-secondary-color);
   padding: var(--padding-lg);
   border-radius: var(--border-radius-xl);
@@ -82,6 +83,7 @@ main section .bottom .placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   opacity: 0.6;
   font-size: var(--font-size-lg);
   gap: var(--gutter-md);
@@ -122,4 +124,19 @@ main section .right .filter input::-webkit-slider-thumb {
   border-radius: 50%;
   background-color: var(--bg-danger-color);
   margin-top: -8.5px;
+}
+
+canvas {
+  display: none;
+  max-width: 90%;
+  max-height: 80vh;
+}
+
+.Presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter-sm);
+}
+.Presets .btn {
+  font-size: var(--font-size-md);
 }

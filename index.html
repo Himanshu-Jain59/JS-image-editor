@@ -7,7 +7,11 @@
       content="width=\
     , initial-scale=1.0"
     />
-    <title>Document</title>
+    <title>Image Editor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="theme.css" />
   </head>
@@ -25,8 +29,10 @@
           </div>
           <div class="bottom">
             <div class="placeholder">
+              <i class="ri-image-line"></i>
               <p>No image choosen</p>
             </div>
+            <canvas id="image-canvas"></canvas>
           </div>
         </div>
         <div class="right">
@@ -34,6 +40,10 @@
           <div class="filters">
             <div class="filter"></div>
           </div>
+          <br />
+          <h2>Presets</h2>
+          <br />
+          <div class="Presets"></div>
         </div>
       </section>
     </main>
